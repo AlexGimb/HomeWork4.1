@@ -11,7 +11,7 @@ public class Main {
         task9();
     }
     public static void task1(){
-        System.out.println("Задание 1");
+        System.out.println("Задание 1.1");
         int money = 46_200;
         int month = 0;
         int deposit = 0;
@@ -23,7 +23,7 @@ public class Main {
         }
     }
     public static void task2 (){
-        System.out.println("Задание 2");
+        System.out.println("Задание 1.2");
         int a = 0;
         while (a<10) {
             a++;
@@ -36,7 +36,7 @@ public class Main {
         System.out.println();
     }
     public static void task3(){
-        System.out.println("Задание 3");
+        System.out.println("Задание 1.3");
         int country = 12_000_000;
         int fertility = (country/1000) * 17;
         int mortality = (country/1000) * 8;
@@ -46,19 +46,18 @@ public class Main {
         }
     }
     public static void task4(){
-        System.out.println("Задание 4");
+        System.out.println("Задание 2.1");
         double deposit = 15_000;
         int month = 0;
-        while (deposit <= 120_000_000){
+        while (deposit <= 12_000_000){
             deposit = deposit + deposit * 0.07;
             month++;
-            if (month % 2  == 0){
             System.out.printf("Месяц %d сумма на вкладе %.2f рублей\n", month,deposit);
-            }
+
         }
     }
     public static void task5 (){
-        System.out.println("Задание 5");
+        System.out.println("Задание 2.2");
         double deposit = 15_000;
         int month = 0;
         while (deposit <= 120_000_000){
@@ -70,7 +69,7 @@ public class Main {
         }
     }
     public static void task6 (){
-        System.out.println("Задание 6");
+        System.out.println("Задание 2.3");
         double deposit = 15_000;
         int month = 0;
         while (month <= 108){
@@ -82,27 +81,28 @@ public class Main {
         }
     }
     public static void task7(){
-        System.out.println("Задание 7");
-        int date = 1;
-        while (date<=31) {
-            date = date + 6;
-            if (date <= 31) {
-                System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет.\n", date);
+        System.out.println("Задание 2.4");
+        int friday = 4;
+        System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет\n",friday);
+        while (friday <=31) {
+            friday = friday + 7;
+            if (friday <=31) {
+                System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет.\n", friday);
             }
         }
     }
     public static void task8 (){
-        System.out.println("Задание 8");
-        int date = 0;
-        while (date<=2100) {
-            date = date + 79;
-            if (date >= 1800 && date <= 2200) {
-                System.out.printf("Комета пролетала в %d году\n", date);
+        System.out.println("Задание 3.1");
+        int year = 0;
+        while (year <=2122) {
+            year = year + 79;
+            if (year >= 1822 && year <= 2122) {
+                System.out.printf("Комета пролетала в %d году\n", year);
             }
         }
     }
     public static void task9 (){
-        System.out.println("Задание 9");
+        System.out.println("Задание 3.2");
         int sum = 0;
         for (int number = 1; number <= 10; number++){
             sum = number * 2;
